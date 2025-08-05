@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Cards Grid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 20px;
+        }
+
+        .big-card {
+            background-image: url(https://i.pinimg.com/736x/8c/37/81/8c37813608bd1e2bb473a045ab00bff2.jpg);
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .small-card {
+            background-image: url(https://i.pinimg.com/736x/e1/33/a8/e133a84a30fd050df332244e6c5f2bdc.jpg);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+        .small-card:hover {
+            transform: scale(1.05);
+        }
+
+        .small-card img {
+            max-width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .small-card p {
+            font-size: 18px;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+
+        .small-card a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .small-card a:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="big-card">
+        <h2 style="text-align:center;">Product Collection</h2>
+        <div class="grid-container">
+            
+            <div class="small-card">
+                <img src="https://m.media-amazon.com/images/I/61nRhatx8uL._AC_UL480_FMwebp_QL65_.jpg" alt="Refrigerator">
+                <p>Refrigerator</p>
+                <a href="https://www.amazon.in/Haier-Direct-Refrigerator-HRD-2203BS-Brushline/dp/B08KH7VF4Q/ref=sr_1_5?_encoding=UTF8&content-id=amzn1.sym.58c90a12-100b-4a2f-8e15-7c06f1abe2be&dib=eyJ2IjoiMSJ9.R3t0sYDGe4YgvlPwB9OuOeaZ_UA37YlXlrCBtto4w_yatV-eK-EtSvMIAsfVgdtqX3WREEKQO4AcB2UEP8XQ0oVoAlWta9VrK2fYyP4r-um3x0rTjd8O3q8Ca2yY_5pC_9tFPxuL9f0etomayusB9i4GP8T33fOu6gqAqPMLkxEcVlBKiQaY8i-IjlnoR_CTly7pAVoZq0mliTaJZKVBRDdrtB_47XYMlldoNGEEdT5-z9oLgaGWA0j_OF6g5w7EVKg3o7XElcSnpdi_2j2JoYtGqMAwN4jJy3_DKf8gFOY.7ZxySVsqBOo20aKWUzS0tWe4rDAOUr41GRMB9E4wdoM&dib_tag=se&pd_rd_r=6556b211-7630-4ce2-9d11-8d660f339555&pd_rd_w=9BQnH&pd_rd_wg=awhxI&qid=1750400341&refinements=p_85%3A10440599031&rps=1&s=kitchen&sr=1-5&th=1">Buy Now</a>
+            </div>
+
+            <div class="small-card">
+                <img src="https://m.media-amazon.com/images/I/61GWaL9HTiL._SX679_.jpg" alt="Watch">
+                <p>Watch</p>
+                <a href="https://www.amazon.in/Premium-Digital-Rosegold-Vintage-WR-Rosegold/dp/B0BZJ1B578/ref=zg_bs_c_watches_d_sccl_4/261-6568344-4738859?pd_rd_w=5ttaE&content-id=amzn1.sym.7f3d66f6-5df6-41bc-b3bc-9782a34ce834&pf_rd_p=7f3d66f6-5df6-41bc-b3bc-9782a34ce834&pf_rd_r=BN457XQZVN75M7TXTDC5&pd_rd_wg=AGsPD&pd_rd_r=39b48716-40b1-4cbc-9616-1fc0a295e7d9&pd_rd_i=B0BZJ1B578&th=1">Buy Now</a>
+            </div>
+
+            <div class="small-card">
+                <img src="https://m.media-amazon.com/images/I/71PWy9T1yaL._SX679_.jpg" alt="Study Table">
+                <p>Study Table</p>
+                <a href="https://www.amazon.in/DIVIJA-STORE-Premium-Portable-Plastic/dp/B0F1LDR2FQ/ref=zg_bsnr_c_kitchen_d_sccl_8/261-6568344-4738859?pd_rd_w=Vk8Uj&content-id=amzn1.sym.7f3d66f6-5df6-41bc-b3bc-9782a34ce834&pf_rd_p=7f3d66f6-5df6-41bc-b3bc-9782a34ce834&pf_rd_r=GSXWF8XDHR7W6Z2DGF2R&pd_rd_wg=FMpid&pd_rd_r=d3690b3b-e212-450f-b6a0-5f4346201ae4&pd_rd_i=B0F1LDR2FQ&th=1">Buy Now</a>
+            </div>
+
+            <div class="small-card">
+                <img src="https://m.media-amazon.com/images/I/71WGRV0GhFL._SY342_.jpg" alt="Book">
+                <p>Book</p>
+                <a href="https://www.amazon.in/Good-Girls-Guide-Murder-Books/dp/0008534969?pd_rd_w=eH3wL&content-id=amzn1.sym.9f0dfbb8-37aa-43b2-9f27-1bd5a946e884&pf_rd_p=9f0dfbb8-37aa-43b2-9f27-1bd5a946e884&pf_rd_r=SBW8HZHFQJYETPN4DCHE&pd_rd_wg=6jlsD&pd_rd_r=20bc6e12-fd3c-4604-9e5b-c0d48e50b2cb&pd_rd_i=0008534969&ref_=oct_dx_dotd_0008534969">Buy Now</a>
+            </div>
+
+            <div class="small-card">
+                <img src="https://m.media-amazon.com/images/I/71wOq6PhyUL._SX466_.jpg" alt="Mobile Cover">
+                <p>Mobile Cover</p>
+                <a href="https://www.amazon.in/COLORflow-Cover-Compatible-Floral-Customized/dp/B0DK1WPZL4/ref=sr_1_13_sspa?crid=WJ9WIKU12PQM&dib=eyJ2IjoiMSJ9.67gx2JINsnz3rbfEmXmjSwgXUm5McwQtjQROSBt4LgGqyb2y5Y1NtTnbWd-gT18xRR9f_5px7uA9LHHpcHZjg0bkth1V5blncbO0JDDch54QV2Snun4sOZ54y9mGyVdEIckFuBZgdBlF6x8B-51iOuItLQQD5WgHV00UCQ4rhb7XmTBspTrajq7Y6591LvcxJbsrUlAvbqGHmBPJSm2bX9Eps1DG_ztZKgLyFSFwwt4mQvxiCqKz8OTwX4Kpk5SaW7a7m2v2Nr1pJdQmjO-iWGrxQovXaH7tRZ5UeA9I0dQ.WonHt6LAL9WfW7XHgwdrgGnFJBvg8OFC86VD3fc_fwk&dib_tag=se&keywords=vivo%2Bt2x%2B5g%2Bmobile%2Bcover&qid=1750401302&s=electronics&sprefix=vivo%2Bt2%2Celectronics%2C219&sr=1-13-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&th=1">Buy Now</a>
+            </div>
+
+            <div class="small-card">
+                <img src="https://m.media-amazon.com/images/I/71UCk9VMVrL._SY575_.jpg" alt="Jewellery">
+                <p>Jewellery</p>
+                <a href="https://www.amazon.in/Shining-Diva-Fashion-Multilayer-rr14669b/dp/B0C1N366XM/ref=zg_bs_c_jewelry_d_sccl_7/261-6568344-4738859?pd_rd_w=mDcm2&content-id=amzn1.sym.7f3d66f6-5df6-41bc-b3bc-9782a34ce834&pf_rd_p=7f3d66f6-5df6-41bc-b3bc-9782a34ce834&pf_rd_r=EWC4D3VJ5RAZGH582VN4&pd_rd_wg=ngV5E&pd_rd_r=1c106d39-9e56-4fbd-bf26-5f1e5594e2dd&pd_rd_i=B0C1N366XM&psc=1">Buy Now</a>
+            </div>
+
+            <div class="small-card">
+                <img src="https://m.media-amazon.com/images/I/61ccEkw+gTL._SX466_.jpg" alt="Comb">
+                <p>Comb</p>
+                <a href="https://www.amazon.in/CoolShef-Green-Mini-Comb-Kids/dp/B0DT6YLPC7/?_encoding=UTF8&pd_rd_w=Pstii&content-id=amzn1.sym.ee67b10b-7f09-4e67-8c24-6301b521570e&pf_rd_p=ee67b10b-7f09-4e67-8c24-6301b521570e&pf_rd_r=6MMDS11NR6YEPYTTYHXF&pd_rd_wg=AGv5I&pd_rd_r=c7d7f905-db70-4924-a278-f06d26f90a45&ref_=pd_hp_d_btf_NSS">Buy Now</a>
+            </div>
+
+            <div class="small-card">
+                <img src="https://m.media-amazon.com/images/I/61ZSMzTv25L._SX679_.jpg" alt="Water Bottle">
+                <p>Water Bottle</p>
+                <a href="https://www.amazon.in/MILTON-Stainless-Bottle-Kitchen-Treking/dp/B0C74Q9QV6/ref=sr_1_7?crid=3F1LE1W63SAGV&dib=eyJ2IjoiMSJ9.jl64m74FQ-BQ-4uo_WDw0kG9FQdu0SZL0gr0gIeoQuMSEx88Tvut36k2MFyo2kmvEOmET3JcYyS_IR_UBbbzghoL5MGKfWFSNx4erboskJKLitIDOQ3_DImnGnOfTtpKfJH92_OMmX-Wb8QGcQHtHuE3Qqlrh_Adakn9dnGADU7W0uspRI2sxn8Vlt70uE5I6Z6aWjbk7r6yvdW2rb8HFpXB0YmeQKJn7WlBnaLFoiej8Q7PQBE0rPhvn522-sLfkcthNtczVQionQN7WFjPcMIJ7_JBgUiNNDOj8n1B7xw.ixVF7_dkghnAOhP2357l85OTRbfTq-c4jCuG7iDE1Qc&dib_tag=se&keywords=water%2Bbottle&qid=1750610567&sprefix=water%2Bbottle%2Caps%2C235&sr=8-7&th=1">Buy Now</a>
+            </div>
+
+            <div class="small-card">
+                <img src="https://m.media-amazon.com/images/I/61OfsNBuN5L._SY741_.jpg" alt="Cow Toy">
+                <p>Cow Toy</p>
+                <a href="https://www.amazon.in/AVSHUB-Soft-Toy-Toys-Kids/dp/B07DDJB3H5/ref=sr_1_15_sspa?_encoding=UTF8&content-id=amzn1.sym.742fb065-e155-4537-9a78-dd144632552d&dib=eyJ2IjoiMSJ9.9qTMMjwR4dieiIp_NA_wqMWOU62Gk-C0rhwtCrYHNeete3Z38NOpLbbYU375c516HTedJqXsNsL2NU3rTKS7TZOCVObGeJNIesJ0ptO4l8jAtZ1kU_XBaiKKxF-54Iz9rxzDLU9BUGFSgV-OSVhJQ9mjDzGBvylMtSrMmdTU9srK-2tXyNTdswAC6x5TDXsL5boje7xUdE-BxzWamCWgrF3DZI3hQX9A_1piE8AF0GbeXN1owO30mMQ9QKOsF81lGHhLoH-KccwK8HWyPDN-sDyOTwXpL0d7CzgqZCXOR8k.8ROxskesXILQxaiehGvgIoUBei5UDP2YHgijbH7vUfI&dib_tag=se&pd_rd_r=c4c73fcb-ae7c-45da-9e6b-686d5d8dce34&pd_rd_w=gNxKn&pd_rd_wg=kKrwv&qid=1750610749&refinements=p_n_format_browse-bin%3A30678570031&rnid=30678568031&s=toys&sr=1-15-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGZfYnJvd3Nl&psc=1">Buy Now</a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
