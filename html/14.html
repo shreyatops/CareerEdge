@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        body {
+      background-color: #eee;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .main {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 60px; 
+      background-color:plum;
+      padding: 60px;
+      border: 10px solid black;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0,0,0,0.3);
+    }
+
+    .main img {
+      width: 350px;         
+      height: 350px;
+      object-fit: contain;
+      border: 6px solid black;
+      background-color: white;
+      padding: 10px;
+      border-radius: 10px;
+    }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <img src="https://i.pinimg.com/1200x/b9/cd/02/b9cd02c9da35779eb40f76888acd37e8.jpg" alt="image not found" class="image">
+        <img src="https://i.pinimg.com/736x/63/51/2b/63512b1703f7467fc6ca53d2855a63a3.jpg" alt="image not found" class="image">
+        <img src="https://i.pinimg.com/1200x/d6/6a/82/d66a825392f6e9390646c06203eaa12f.jpg" alt="image not found" class="image">
+        <img src="https://i.pinimg.com/1200x/81/a3/93/81a39364841d239e004084fac09540ba.jpg" alt="image not found" class="image">
+        <img src="https://i.pinimg.com/736x/63/5f/dd/635fdd3f355cc7a84010f97df6deecc0.jpg" alt="image not found" class="image">
+        <img src="https://i.pinimg.com/736x/85/63/c1/8563c12e464e831104c1cb75415d52b4.jpg" alt="image not found" class="image">
+        <img src="https://i.pinimg.com/736x/5c/39/f6/5c39f6c16703de036a5ccb444aef8a1b.jpg" alt="image not found" class="image">
+        <img src="https://i.pinimg.com/736x/47/62/b3/4762b3c4a39e14b945a5db802249e93d.jpg" alt="image not found" class="image">
+        <img src="https://i.pinimg.com/736x/bb/de/1e/bbde1ec9461ab0c1dfba5ff1274a3180.jpg" alt="image not found" class="image">
+
+    </div>
+</body>
+</html>

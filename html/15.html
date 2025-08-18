@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            height: auto;
+            width: 700px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+        .main > div{
+            height: 200px;
+            width: 200px;
+            border: 5px solid black;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .child1{
+            background-image: url("https://i.pinimg.com/1200x/b9/cd/02/b9cd02c9da35779eb40f76888acd37e8.jpg");
+        }
+        .child2{
+            background-image: url("https://i.pinimg.com/736x/63/51/2b/63512b1703f7467fc6ca53d2855a63a3.jpg");
+        }
+        .child3{
+            background-image: url("https://i.pinimg.com/1200x/d6/6a/82/d66a825392f6e9390646c06203eaa12f.jpg");
+        }
+        .child4{
+            background-image: url("https://i.pinimg.com/1200x/81/a3/93/81a39364841d239e004084fac09540ba.jpg");
+        }
+        .child5{
+            background-image: url("https://i.pinimg.com/736x/63/5f/dd/635fdd3f355cc7a84010f97df6deecc0.jpg");
+        }
+        .child6{
+            background-image: url("https://i.pinimg.com/736x/85/63/c1/8563c12e464e831104c1cb75415d52b4.jpg");
+        }
+        .child7{
+            background-image: url("https://i.pinimg.com/736x/5c/39/f6/5c39f6c16703de036a5ccb444aef8a1b.jpg");
+        }
+        .child8{
+            background-image: url("https://i.pinimg.com/736x/47/62/b3/4762b3c4a39e14b945a5db802249e93d.jpg");
+        }
+        .child9{
+            background-image: url("https://i.pinimg.com/736x/bb/de/1e/bbde1ec9461ab0c1dfba5ff1274a3180.jpg");
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="child1"></div>
+        <div class="child2"></div>
+        <div class="child3"></div>
+        <div class="child4"></div>
+        <div class="child5"></div>
+        <div class="child6"></div>
+        <div class="child7"></div>
+        <div class="child8"></div>
+        <div class="child9"></div>
+    </div>
+</body>
+</html>

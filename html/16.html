@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fixed Layout</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    
+    .main {
+      height: auto;
+      width: 500px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      /* gap: 10px; */
+      margin: 0;
+    }
+
+    .child1, .child5, .child6 {
+      height: 100px;
+      background-color: plum;
+    }
+
+    .child2, .child3 {
+      height: 100px;
+      grid-column: span 2;
+      background-color: beige;
+    }
+
+    .child4 {
+      height: 100px;
+      background-color: gold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="main">
+    <div class="child1"></div>
+    <div class="child2"></div>
+    <div class="child3"></div>
+    <div class="child4"></div>
+    <div class="child5"></div>
+    <div class="child6"></div>
+  </div>
+
+</body>
+</html>
